@@ -1,0 +1,148 @@
+/*
+ * ----------BASE----------
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 240%;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*
+ * ---------- NAVBAR ----------
+ */
+
+.nav__bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #093348;
+    box-shadow: 0 2px 2px #093348;
+    z-index: 999999;
+}
+
+.main__nav {
+    margin-top: 20px;
+    float: right;
+    list-style: none;
+}
+
+.main__nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.main__nav li a:link,
+.main__nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70%;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+}
+
+.main__nav li a:hover,
+.main__nav li a:active {
+    background-color: #0f5375;
+}
+
+.active {
+    background-color: #0f5375;
+}
+
+.logo {
+    margin: 10px 0;
+    width: auto;
+    float: left;
+}
+
+/*
+ * ---------- HEADER ----------
+ */
+
+header {
+    background-image: linear-gradient(rgba(9,51,72,0.7),rgba(9,51,72,0.7)), url('img/Coding4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+.nav__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav__text-best-code {
+    letter-spacing: -1px;
+    color: #fff;
+    font-size: 120%;
+    font-weight: 200;
+}
+
+.nav__text-best-code:after {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    content: " ";
+    max-width: 410px;
+    margin: 20px auto;
+}
+
+.nav__text-work {
+    font-size: 75%;
+    line-height: 21px;
+    color: #b4d1e1;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+
+/*
+ * ---------- BUTTON ----------
+ */
+
+.btn {
+    font-size: 75%;
+    color: #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    font-weight: 500;
+}
+
+.btn i {
+    font-size: 120%;
+    margin-left: 15px;
+    line-height: 120%;
+    vertical-align: center;
+}
