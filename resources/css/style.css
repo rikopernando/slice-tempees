@@ -2,6 +2,7 @@
  * ----------BASE----------
  */
 
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +27,7 @@ h1 {
 h2, h3 {
     text-align: center;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 h2 {
@@ -104,14 +106,12 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 90vh;
+    height: 100vh;
 }
 
 .nav__text-box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
+    top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
@@ -220,4 +220,48 @@ header {
     margin: 30px auto;
 }
 
+
+/*
+ * ---------- SECTION PORTFOLIO ----------
+ */
+
+.section__porfolio {
+    text-align: center;
+    background-color: #3ead87;
+}
+
+.section__porfolio h2,
+.section__porfolio p {
+    color: #fff;
+}
+
+.section__porfolio p {
+    text-align: center;
+    font-size: 90%;
+    margin-bottom: 50px;
+}
+
+.section__porfolio img {
+    width: 70%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.section__porfolio-center-1 {
+    border-right: 1px solid #4ebe98;
+}
+
+.section__porfolio-center-1 figure img {
+    margin-right: 50px;
+    opacity: 0.7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.95);
+}
+
+.section__porfolio-center-2 img {
+    margin-left: 50px;
+}
+
+.section__porfolio-contact {
+    margin-top: 50px;
+}
 
