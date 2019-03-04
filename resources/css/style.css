@@ -23,7 +23,24 @@ h1 {
     margin-bottom: 10px;
 }
 
-.container {
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 180%;
+}
+
+h3 {
+    font-size: 110%;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.row {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -62,14 +79,12 @@ h1 {
     font-weight: 400;
     padding: 10px;
     border-radius: 2px;
+    -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
 }
 
 .main__nav li a:hover,
-.main__nav li a:active {
-    background-color: #0f5375;
-}
-
+.main__nav li a:active,
 .active {
     background-color: #0f5375;
 }
@@ -96,6 +111,8 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -129,7 +146,8 @@ header {
  * ---------- BUTTON ----------
  */
 
-.btn {
+.btn:link,
+.btn:visited {
     font-size: 75%;
     color: #fff;
     padding: 10px 40px;
@@ -138,6 +156,8 @@ header {
     border-radius: 25px;
     border: 2px solid #fff;
     font-weight: 500;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
 }
 
 .btn i {
@@ -146,3 +166,58 @@ header {
     line-height: 120%;
     vertical-align: center;
 }
+
+.btn:hover,
+.btn:active {
+    background-color: #093348;
+}
+
+/*
+ * ---------- SECTION OUR TEAM ----------
+ */
+
+.our__team {
+    text-align: center;
+}
+
+.our__team img {
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 1px 3px rgba(6,6,6,0.14);
+    height: 170px;
+    width: 170px;
+}
+
+.our__team div {
+    color: #000;
+    font-weight: 400;
+}
+
+.our__team span {
+    font-size: 65%;
+    font-weight: 400;
+    color: #618598;
+}
+
+.our__team-quote {
+    text-align: center;
+}
+
+.our__team-quote p {
+    font-size: 75%;
+    width: 500px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #0d415c;
+}
+
+.our__team-quote:before {
+    display: block;
+    height: 1px;
+    background-color: #c9d4da;
+    content: " ";
+    max-width: 480px;
+    margin: 30px auto;
+}
+
+
