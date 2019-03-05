@@ -73,6 +73,65 @@ section {
     margin-top: -5px;
 }
 
+/* ---------- BUTTON ----------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    font-size: 75%;
+    color: #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    font-weight: 500;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+input[type=submit] {
+    background-color: #223139;
+}
+
+.btn i {
+    font-size: 120%;
+    margin-left: 15px;
+    line-height: 120%;
+    vertical-align: center;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #093348;
+}
+
+/*---- LINE BREAK --- */
+
+.nav__text-best-code:after,
+.section__testimonis-say p:after,
+.our__team-quote:before {
+    display: block;
+    height: 1px;
+    content: " ";
+}
+
+.nav__text-best-code:after {
+    background-color: #fff;
+    max-width: 410px;
+    margin: 20px auto;
+}
+
+.section__testimonis-say p:after,
+.our__team-quote:before {
+    background-color: #c9d4da;
+    max-width: 480px;
+    margin: 30px auto;
+}
+
+
 /*
  * ---------- NAVBAR ----------
  */
@@ -150,15 +209,6 @@ header {
     font-weight: 200;
 }
 
-.nav__text-best-code:after {
-    display: block;
-    height: 1px;
-    background-color: #fff;
-    content: " ";
-    max-width: 410px;
-    margin: 20px auto;
-}
-
 .nav__text-work {
     font-size: 75%;
     line-height: 21px;
@@ -168,42 +218,6 @@ header {
 }
 
 
-/*
- * ---------- BUTTON ----------
- */
-
-.btn:link,
-.btn:visited,
-input[type=submit] {
-    font-size: 75%;
-    color: #fff;
-    padding: 10px 40px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 25px;
-    border: 2px solid #fff;
-    font-weight: 500;
-    -webkit-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-}
-
-input[type=submit] {
-    background-color: #223139;
-}
-
-.btn i {
-    font-size: 120%;
-    margin-left: 15px;
-    line-height: 120%;
-    vertical-align: center;
-}
-
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: #093348;
-}
 
 /*
  * ---------- SECTION OUR TEAM ----------
@@ -242,15 +256,6 @@ input[type=submit]:active {
     margin: 0 auto;
     font-weight: 400;
     color: #0d415c;
-}
-
-.our__team-quote:before {
-    display: block;
-    height: 1px;
-    background-color: #c9d4da;
-    content: " ";
-    max-width: 480px;
-    margin: 30px auto;
 }
 
 
@@ -336,15 +341,6 @@ input[type=submit]:active {
 
 .section__testimonis-say a i {
     color: #d9e1e5;
-}
-
-.section__testimonis-say p:after {
-    display: block;
-    height: 1px;
-    background-color: #c9d4da;
-    content: " ";
-    max-width: 480px;
-    margin: 30px auto;
 }
 
 .section__testimonis-client {
