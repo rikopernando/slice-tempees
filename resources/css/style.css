@@ -47,6 +47,15 @@ section {
     margin: 0 auto;
 }
 
+.clearfix { zoom: 1; }
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 /*
  *----- REUSEBLE COMPONENTS
@@ -86,6 +95,7 @@ input[type=submit] {
     border-radius: 25px;
     border: 2px solid #fff;
     font-weight: 500;
+    cursor: pointer;
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
 }
@@ -112,7 +122,8 @@ input[type=submit]:active {
 
 .nav__text-best-code:after,
 .section__testimonis-say p:after,
-.our__team-quote:before {
+.our__team-quote:before,
+.footer__line:after {
     display: block;
     height: 1px;
     content: " ";
@@ -128,6 +139,12 @@ input[type=submit]:active {
 .our__team-quote:before {
     background-color: #c9d4da;
     max-width: 480px;
+    margin: 30px auto;
+}
+
+.footer__line:after {
+    background-color: rgba(240,240,240,0.4);
+    max-width: 960px;
     margin: 30px auto;
 }
 
@@ -359,7 +376,8 @@ header {
  * ---------- SECTION CONTACT----------
  */
 
-.section__contact {
+.section__contact,
+footer {
     background-color: #223139;
     color: #fff;
 }
@@ -395,4 +413,33 @@ textarea {
 *:focus {
     outline: none;
 }
+
+/*
+ * ---------- FOOTER ----------
+ */
+
+footer {
+    padding: 20px 0;
+}
+
+.footer__social_media {
+    float: left;
+    vertical-align: middle;
+}
+
+.footer__social_media li:first-child {
+    font-size: 80%;
+    line-height: 26px;
+}
+
+.footer__social_media li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer__copyright {
+    float: right;
+    font-size: 60%;
+}
+
 
