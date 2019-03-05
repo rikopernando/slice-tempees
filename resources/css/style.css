@@ -47,6 +47,32 @@ section {
     margin: 0 auto;
 }
 
+
+/*
+ *----- REUSEBLE COMPONENTS
+ */
+
+/* ---- ICON ------*/
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 120%;
+    /* secrets to align text and icon */
+    /* untuk menyelaraskan/seimbang antara text dan icon */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
 /*
  * ---------- NAVBAR ----------
  */
@@ -257,11 +283,72 @@ header {
     box-shadow: 0 1px 3px rgba(0,0,0,0.95);
 }
 
+.section__porfolio-center-1 i {
+    transform: translate(-11%, -150%);
+}
+
 .section__porfolio-center-2 img {
     margin-left: 50px;
 }
 
 .section__porfolio-contact {
-    margin-top: 50px;
+    margin-top: 20px;
+}
+
+/*
+ * ---------- SECTION TESTIMONI----------
+ */
+
+.section__testimonis-say {
+    display: flex;
+}
+
+.section__testimonis-say p {
+    text-align: center;
+    font-size: 75%;
+    color: #708b99;
+    font-style: italic;
+    max-width: 706px;
+    margin: 0 auto;
+}
+
+.section__testimonis-say a:link,
+.section__testimonis-say a:visited {
+    border-radius: 50%;
+    border: 1px solid #c9d4da;
+    height: 33px;
+    line-height: 33px;
+    -webkit-transition: border 0.5s;
+    transition: border 0.5s;
+}
+
+.section__testimonis-say a:hover,
+.section__testimonis-say a:active {
+    border: 2px solid #b9c1c5;
+}
+
+.section__testimonis-say a i {
+    color: #d9e1e5;
+}
+
+.section__testimonis-say p:after {
+    display: block;
+    height: 1px;
+    background-color: #c9d4da;
+    content: " ";
+    max-width: 480px;
+    margin: 30px auto;
+}
+
+.section__testimonis-client {
+    font-weight: bold;
+    font-size: 65%;
+    color: #2d4159;
+    text-align: center;
+}
+
+.section__testimonis-client span {
+    color: #708b99;
+    font-weight: 300;
 }
 
