@@ -173,7 +173,8 @@ header {
  */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     font-size: 75%;
     color: #fff;
     padding: 10px 40px;
@@ -186,6 +187,10 @@ header {
     transition: background-color 0.2s;
 }
 
+input[type=submit] {
+    background-color: #223139;
+}
+
 .btn i {
     font-size: 120%;
     margin-left: 15px;
@@ -194,7 +199,9 @@ header {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #093348;
 }
 
@@ -350,5 +357,46 @@ header {
 .section__testimonis-client span {
     color: #708b99;
     font-weight: 300;
+}
+
+/*
+ * ---------- SECTION CONTACT----------
+ */
+
+.section__contact {
+    background-color: #223139;
+    color: #fff;
+}
+
+.section__contact p {
+    font-size: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section__contact-form {
+    text-align: center;
+}
+
+.section__contact-form input[type=text],
+.section__contact-form input[type=email],
+.section__contact-form textarea {
+    width: 500px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0.5px 0.866px 5px rgba(6,6,6,0.24);
+    margin: 5px 0;
+    font-size: 75%;
+    color: #8ea6b3;
+    text-align: center;
+}
+
+textarea {
+    height: 140px;
+}
+
+*:focus {
+    outline: none;
 }
 
